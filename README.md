@@ -1,8 +1,10 @@
 ```java
-public static void hello() {
-        /// 业务方通知活动暂停
-        // Business business = new Business();
-        // business.active();
-        System.out.println("it's finished");
+    try {
+      if (com.alibaba.fasttext.sec.url.CheckSafeUrl.getDefaultInstance().inWhiteList(targetUrl)) {
+            response.sendRedirect(targetUrl);
+        }
+    } catch (IOException e) {
+        logger.error("Check returnURL error! targetURL:{}", targetURL, e);
+        throw e;
     }
 ```
