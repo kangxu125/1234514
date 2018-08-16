@@ -1,8 +1,6 @@
 ```java
-objectThreadLocal.set(someObject);
-    try {
-        ...
-    } finally {
-        objectThreadLocal.remove();
-    }
+/**  
+     * @author yangguanbao  
+     * @date 2016/10/31   
+     */
 ```
